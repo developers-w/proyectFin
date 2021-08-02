@@ -21,7 +21,7 @@ div,img{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color:#F8F8FA;
+  color:#222222;
 }
 
 #nav {
