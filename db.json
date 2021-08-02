@@ -1,0 +1,17 @@
+{
+    "beneficios": [
+      { "id": 1, "title": "Aprende de expertos", "texto": "Aprende directamente de expertos del mercado a través del análisis y solución de problemas de programación. Utilizando los frameworks y herramientas de mayor relevancia dentro del mundo del coding." },
+      { "id": 2, "title": "Clases Virtuales", "texto": "Aprovecha tu tiempo al máximo en nuestras clases virtuales y participa presencialmente de nuestras hackathones semanales para conocer y participar de la comunidad profesional que liderará la transformación tecnológica del Perú." },
+      { "id": 3, "title": "Empleabilidad", "texto": "Al finalizar el programa y certificarte a nombre de IDAT, podrás acceder a ofertas laborales especialmente identificadas para la comunidad PachaQTec, a través de nuestra plataforma de empleabilidad IDAT JOB." }
+    ],
+    "Cursos":[
+      {"id":1,"curso":"Desarrollo Frond-End","duracion":"6 meses","precio":"3500.00"},
+      {"id":2,"curso":"Desarrollo Back-End","duracion":"6 meses","precio":"3500.00"},
+      {"id":3,"curso":"Desarrollo de Aplicativos moviles","duracion":"5 meses","precio":"3500.00"},
+      {"id":4,"curso":"Diseño de experiencia de usuario","duracion":"3 meses","precio":"3500.00"},
+      {"id":5,"curso":"Desarrollo de juegos","duracion":"6 meses","precio":"3500.00"},
+      {"id":6,"curso":"Marketing Digital","duracion":"4 meses","precio":"1500.00"},
+      {"id":7,"curso":"Data Analytics","duracion":"4 meses","precio":"2500.00"},
+      {"id":8,"curso":"Desarrollo Frond-End Avanzado","duracion":"6 meses","precio":"3500.00"}
+    ]
+  }
