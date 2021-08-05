@@ -13,5 +13,13 @@
       {"id":6,"curso":"Marketing Digital","duracion":"4 meses","precio":"1500.00"},
       {"id":7,"curso":"Data Analytics","duracion":"4 meses","precio":"2500.00"},
       {"id":8,"curso":"Desarrollo Frond-End Avanzado","duracion":"6 meses","precio":"3500.00"}
+    ],
+    "Modulos":[
+      {"id":1,"semana":[{"id":1,"tema":"sdsdsdsdsds"}]},
+      {"id":2,"semana":[{"id":2,"tema":"sdsdsdsdsds"},{"id":3,"tema":"sdsdsdsdsds"}]},
+      {"id":3,"semana":[{"id":4,"tema":"sdsdsdsdsds"},{"id":5,"tema":"sdsdsdsdsds"},{"id":6,"tema":"sdsdsdsdsds"},{"id":7,"tema":"sdsdsdsdsds"}]},
+      {"id":4,"semana":[{"id":8,"tema":"sdsdsdsdsds"},{"id":9,"tema":"sdsdsdsdsds"}]},
+      {"id":5,"semana":[{"id":10,"tema":"sdsdsdsdsds"},{"id":11,"tema":"sdsdsdsdsds"},{"id":12,"tema":"sdsdsdsdsds"},{"id":13,"tema":"sdsdsdsdsds"},{"id":14,"tema":"sdsdsdsdsds"},{"id":15,"tema":"sdsdsdsdsds"},{"id":16,"tema":"sdsdsdsdsds"},{"id":17,"tema":"sdsdsdsdsds"}]},
+      {"id":6,"semana":[{"id":17,"tema":"sdsdsdsdsds"},{"id":18,"tema":"sdsdsdsdsds"}]}
     ]
   }

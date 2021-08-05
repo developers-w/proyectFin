@@ -1,24 +1,10 @@
 <template>
-  <div class="contentNav">
-    <Nav/> 
-  </div>
-  <div class="pasarela">
+ 
+  <div class="pasarelaPago">
   
     <div class="columna1">
-       <div class="link">
-          <p>Pasarela de Pagos</p>
-       </div>
-       
-        <div class="metodoPago">
-           <p>Selecciona tu método de pago</p>
-          <div>
-            <button>Tarjeta de crédito</button>
-          <button>Tarjeta de débito</button>
-          <button>Depósito pago efectivo</button>
-          </div>
-        </div>
-        
-        <!-- <div class="datosPersonales">  
+      
+        <div class="datosPersonales">  
           <p>Datos personales</p>        
               <div  class="formatInput">
                       <input type="text"  placeholder="Documento de identidad">
@@ -55,17 +41,14 @@
           <div>
             <button>Finalizar compra</button>
           </div>
-        </div> -->
-        
-        <div metodContent>
-          <PasarelaPago/>
-
         </div>
+        
+        
 
 
     </div>
     <div class="columna2">
-      <CursosComprados/>
+      
     </div>
 
       
@@ -76,15 +59,10 @@
 </template>
 
 <script>
-import Nav from "../components/Nav.vue";
-import PasarelaPago from "../components/PasarelaPago.vue";
-import CursosComprados from "../components/CursosComprados.vue"
 export default {
   name: "Pasarela",
   components: {
-    Nav,
-    PasarelaPago,
-    CursosComprados
+      
   },
 };
 </script>
@@ -97,59 +75,78 @@ export default {
  background-color: #000425;
 }
 
-.pasarela{
-width: 88%;
-height: 80vh;
-font-family: Poppins;
-font-size: 16px;
-font-weight: bold;
-margin: 0 auto;
-margin-top: 36px;
-display: flex;
 
-}
 .columna1{
   text-align: left; 
   width: 100% ;
   max-width:693px ; 
-  margin-right: 60px;
-
-}
-.columna2{
-  margin: 0;
-  padding: 0;
-}
-.columna1 link{
-  /* background-color: blue; */
 
 }
 
-.columna1 .metodoPago{
-  margin-top: 25px;
-  
-  
- 
- 
-} 
-.columna1 .metodoPago div{
+.columna1 .datosPersonales div{
   display: flex;
   justify-content: space-between;
   margin: 20px 0 30px 0;
-  
-  
 }
-.columna1 .metodoPago div button{
-  width: 227px;  
+.datosPersonales div input{ 
+  width: 330px;
   height: 50px;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: bold; 
 }
-.columna2{
-  width: 100%;
-  max-width: 433px;
+
+.columna1 .infoCard div{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 10px 0;
+}
+.infoCard div input{ 
+  width: 330px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+.infoCard .fecha div{
+   display: flex;
+   justify-content: flex-start;
+    margin: 0 0 30px 0;
+}
+.infoCard .fecha input{ 
+  width: 95px;
+  height: 50px;
+  margin: 0 24px 0 0;
+  padding: 0;
+}
+.infoCard .numeroCuotas {
+ 
+
+}
+.numeroCuotas div {
+ margin: 20px 0 30px 0;
+  
+}
+.numeroCuotas div button {
+  width: 60px;
+  height: 50px;
+  margin: 0 25px 0 0 ;
+  padding: 0;
+}
+.finalizar div{
+  text-align: right;
+  margin: 42px 0 36px 0 ;
+}
+.finalizar div button{
+  width: 330px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+}
+.formatInput{
+
+  font-family:Roboto;
+  font-size: 12px;
+  font-weight: 300;
+  
 }
 
 

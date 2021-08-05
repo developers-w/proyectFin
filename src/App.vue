@@ -16,12 +16,16 @@ div,img{
   margin: 0;
   padding: 0;
 }
+body{
+ 
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color:#222222;
+  background-color: #f8f8fa;;
 }
 
 #nav {

@@ -4,10 +4,12 @@
   </div>
 
   <div class="misCompras">
-    <div class="compras">
-      <div class="link">
-        <a href="">Carrito compras</a>
+     <div class="link">
+        <router-link to="/"><span>Carrito de compras</span></router-link>
       </div>
+    <div class="content">
+      <div class="compras">
+     
       <div>
         <CursosComprados />
       </div>
@@ -15,70 +17,103 @@
     <div class="subtotal">
       <div>
         <p>Subtotal</p>
-        <p>S/.600.oo</p>
+        <p>S/{{subtotal}}</p>
       </div>
-      <input type="text" />
+      <input type="text" placeholder="Agregar un código de descuesto"/>
       <button>Continuar</button>
     </div>
     <div>
-      <router-link to="/MisCompras/Pasarela">Pasarela</router-link>
+    </div>
+      
     </div>
   </div>
+  <router-link to="/MisCompras/Pasarela">Pasarela</router-link>
 </template>
 
 <script>
 import Nav from "../components/Nav.vue";
 import CursosComprados from "../components/CursosComprados.vue";
+import {mapState} from 'vuex'
 export default {
   name: "MisCompras",
   components: {
     Nav,
-    CursosComprados,
+    CursosComprados
   },
+  computed:{
+    ...mapState(['subtotal'])
+  }
 };
 </script>
 
-<style>
+<style scoped>
+
 .contentNav {
   height: 60px;
   background-color: black;
   padding: 0;
 }
+.link span{
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
 
 .misCompras {
   width: 88%;
-  height: 100vh;
+  height: 70vh;
   margin: 0 auto;
+    
+  
+}
+.misCompras .link {
+  margin: 36px 0 36px 0;
+  text-align: left;
+}
+.misCompras .content{
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  margin-right: 60px;
 }
-.compras .link {
-  margin: 36px;
-}
-
-.misCompras .subtotal {
-  margin-top: 100px;
-  max-width: 433px;
+.content .subtotal{
+  width: 433px;
   height: 283px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 50px;
+ 
+  font-family: Poppins;
+  font-size:  20px;
+  font-weight: bold;
+  color: #5440ff;
+  background-color: white
 }
-.subtotal div {
+.subtotal div{
   display: flex;
   justify-content: space-between;
-  margin: 50px 50px 0 50px;
+  margin-bottom: 20px;
+
+}
+.subtotal input{
+  width:100% ;
+  height: 50px;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 300;
+border-style: double;
+padding-left: 20px;
 }
 
-.subtotal input {
-  width: 333px;
+.subtotal button{
+  width: 100%;
   height: 50px;
-  margin: 20px 50px 35px 50px;
+  margin-top: 35px;
 }
-.subtotal button {
-  padding: 0;
-  width: 333px;
-  height: 50px;
-  margin: 0px 50px 50px 50px;
+.content .compras{
+  width: 693px;
+  margin-right: 60px;
+
 }
+
 </style>

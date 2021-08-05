@@ -1,5 +1,6 @@
 <template>
-  <div class="textoComunidad">
+ 
+    <div class="textoComunidad">
     <div class="mujer">
       <img src="../assets/mujer.png" alt="" />
     </div>
@@ -13,10 +14,11 @@
       <img src="../assets/personas.png" alt="" />
       <div class="textoBeneficio">
         <p>{{ beneficio.title }}</p>
-        <p class="texto">{{ beneficio.texto }}</p>
+        <p class="texto">{{ beneficio.beneficio }}</p>
       </div>
     </div>
   </div>
+ 
 </template>
 
 <script>
@@ -42,7 +44,12 @@ export default {
 };
 </script>
 
-<style scopeed>
+<style scoped>
+.beneficiosComp{
+  
+  
+}
+
 .textoComunidad {
   background-color: #5640ff;
   width: 100%;

@@ -3,7 +3,6 @@
     <div>
       <img src="../assets/logo3.png" alt="" />
     </div>
-    <router-link to="/MisCompras">Home</router-link>
   </div>
 </template>
 

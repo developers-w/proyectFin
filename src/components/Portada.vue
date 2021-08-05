@@ -47,6 +47,7 @@ export default {
 .portada {
   width: 100%;
   height: 500px;
+  color: #f8f8fa;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

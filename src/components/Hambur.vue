@@ -40,7 +40,7 @@ export default {
   animation-fill-mode: forwards;
 }
 .hambur button {
-  background-color: none;
+  background-color: transparent;
   border: 0;
   padding: 0;
   cursor: pointer;

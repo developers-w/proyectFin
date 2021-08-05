@@ -5,10 +5,10 @@
         <img src="../assets/logo.png" alt="" />
       </div>
 
-      <div class="contenedor">
+      <div class="contenedor" >
         <div class="carrito">
-          <img src="../assets/carrito.png" alt="" />
-          <p>{{ contador }}</p>
+          <router-link to="/MisCompras"><img src="../assets/carrito.png" alt="" /></router-link>
+          <p>{{sumarCursos}}</p>
         </div>
 
         <div class="hamburgueza"></div>
@@ -20,6 +20,7 @@
 
 <script>
 import Hambur from "../components/Hambur.vue";
+import {mapState}from 'vuex'
 
 export default {
   name: "Nav",
@@ -32,6 +33,9 @@ export default {
       contador: 0,
     };
   },
+  computed:{
+    ...mapState(['sumarCursos'])
+  }
 };
 </script>
 
